@@ -1,0 +1,18 @@
+<script>
+    algoritmo "CalculoIMC"
+var
+   massa, altura, imc: Real
+inicio
+      Escreva("Massa (Kg): ")
+      Leia(massa)
+      Escreva("Altura (m): ")
+      Leia(altura)
+      imc <- massa / (altura ^ 2)
+      Escreval("IMC: ", imc:5:2)
+      Se (imc >= 18.5) e (imc <= 25) então
+         Escreval("Seu IMC é ", imc:5:2, " Peso ideal!")
+      senao
+           Escreval("Seu IMC é ", imc:5:2, " Atenção!!!")
+      FimSe
+fimalgoritmo
+</script>
