@@ -1,0 +1,25 @@
+<script>
+    algoritmo "EstaAptoADirigir"
+var
+   ano_atual, nasc, idade: Inteiro
+inicio
+      Escreval("----------------------------")
+      Escreval("  DEPARTAMENTO DE TRÂNSITO  ")
+      Escreval("----------------------------")
+      Escreva("Ano Atual (yyyy): ")
+      Leia(ano_atual)
+      Escreva("Ano de Nascimento (yyyy): ")
+      Leia(nasc)
+      idade <- ano_atual - nasc
+      
+      Escreval("---------- STATUS ----------")
+      Escreval("IDADE: ", idade, " ANOS")
+      Se (idade >= 18) entao
+         Escreval("APTO A TIRAR CARTEIRA.")
+      senao
+         Escreval("NÃO APTO A TIRAR CARTEIRA.")
+      FimSe
+      Escreval("----------------------------")
+      
+fimalgoritmo
+</script>
