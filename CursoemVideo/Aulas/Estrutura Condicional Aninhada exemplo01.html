@@ -1,0 +1,29 @@
+<script>
+    algoritmo "Media"
+var
+   n1, n2, m: Real
+
+inicio
+   Escreval("--------------------")
+   Escreval(" ESCOLA PEDRO BONK ")
+   Escreval("--------------------")
+   Escreva("Primeira Nota: ")
+   Leia(n1)
+      Escreva("Segunda Nota: ")
+   Leia(n2)
+   Escreval("--------------------")
+   m <- (n1 + n2) / 2
+   Escreval(" MEDIA:", m)
+   Se m >= 7.0 entao
+     Escreval(" ALUNO APROVADO")
+   senao
+        se (m >= 5) e (m < 7) entao
+           Escreval(" ALUNO EM RECUPERAÇÃO")
+        senao
+           Escreval(" ALUNO REPROVADO")
+        FimSe
+   FimSe
+   Escreval("--------------------")
+
+fimalgoritmo
+</script>
