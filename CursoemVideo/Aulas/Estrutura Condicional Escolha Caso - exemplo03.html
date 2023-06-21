@@ -1,0 +1,25 @@
+<script>
+    algoritmo "Partida de Futebol - Escolha caso"
+var
+   gols1, gols2, dif: Inteiro
+inicio
+      Escreval("--------------------------")
+      Escreval("  Grêmio x Internacional  ")
+      Escreval("--------------------------")
+      Escreva("Quantos gols do Grêmio? ")
+      Leia(gols1)
+      Escreva("Quantos gols do Internacional? ")
+      Leia(gols2)
+      dif <- abs(gols1 -  gols2)
+      Escreval("Diferença: ", dif)
+      Escolha dif
+              caso 0
+                   Escreval("STATUS: EMPATE")
+              caso 1, 2, 3
+                   Escreval("STATUS: PARTIDA NORMAL")
+              caso 4, 5, 6
+                   Escreval("STATUS: GOLEADA")
+      FimEscolha
+      Escreval("---------------------------")
+fimalgoritmo
+</script>

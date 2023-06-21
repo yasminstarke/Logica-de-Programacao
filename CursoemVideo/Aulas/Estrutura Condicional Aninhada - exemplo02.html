@@ -1,0 +1,40 @@
+<script>
+    algoritmo "Aproveitamento de um aluno"
+var
+   nota1, nota2, media: Real
+inicio
+   Escreval("---------------------")
+   Escreval("  Escola Pedro Bonk  ")
+   Escreval("---------------------")
+   Escreva("Primeira Nota: ")
+   Leia(nota1)
+   Escreva("Segunda Nota: ")
+   Leia(nota2)
+   Escreval("---------------------")
+   media <- (nota1 + nota2)/2
+   Escreval(" Média: ", media)
+   Se (media >= 9.0) e (media <= 10) entao
+      Escreval(" APROVEITAMENTO: A")
+   senao
+      se (media >= 8.0) e (media < 9.0) entao
+         Escreval(" APROVEITAMENTO: B")
+      senao
+         se (media >= 7.0) e (media < 8.0) entao
+            Escreval(" APROVEITAMENTO: C")
+         senao
+            Se (media >= 6.0) e (media < 7.0) entao
+               Escreval( " APROVEITAMENTO: D")
+            senao
+               Se (media >= 5.0) e (media < 6) entao
+                  Escreval(" APROVEITAMENTO: E")
+               senão
+                  Escreval(" APROVEITAMENTO: F")
+
+               FimSE
+            FimSE
+         FimSe
+      FimSe
+   FimSE
+   Escreval("---------------------")
+fimalgoritmo
+</script>

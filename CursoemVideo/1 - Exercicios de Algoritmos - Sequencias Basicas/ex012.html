@@ -1,0 +1,49 @@
+# 12) Crie um programa que leia o preço de um produto, calcule e mostre o seu 
+# PREÇO PROMOCIONAL, com 5% de desconto.
+
+<script>
+    algoritmo "ex012"
+var
+   preco, novopreco: Real
+inicio
+      Escreval("===================================")
+      Escreval("          Descontos Starke         ")
+      Escreval("===================================")
+      Escreva("Digite o preço do produto: R$ ")
+      Leia(preco)
+      novopreco <- preco - preco * (5/100)
+      Escreval("O preço desse produto com 5% de desconto é R$", novopreco:5:3)
+fimalgoritmo    
+</script>
+
+
+###### OUTRA FORMA COM A ESTRUTURA CONDICIONAL ESCOLHA CASO ##########
+
+<script>
+    algoritmo "ex012"
+var
+   preco, preco5, preco10, preco20: Real
+   d: inteiro
+inicio
+      Escreval("===================================")
+      Escreval("          Descontos Starke         ")
+      Escreval("===================================")
+      Escreva("Digite o preço do produto: R$ ")
+      Leia(preco)
+      Escreval("[1] para 5% off")
+      Escreval("[2] para 10% off")
+      Escreval("[3] para 20% off")
+      Leia(d)
+      Escolha d
+              Caso 1
+                   preco5 <- preco - preco * (5/100)
+                   Escreval("O preço desse produto com 5% de desconto é R$", preco5:5:2)
+              Caso 2
+                   preco10 <- preco - preco * (10/100)
+                   Escreval("O preço desse produto com 10% de desconto é R$", preco10:5:2)
+              Caso 3
+                   preco20 <- preco - preco * (20/100)
+                   Escreval("O preço desse produto com 20% de desconto é R$", preco20:5:2)
+      FimEscolha
+fimalgoritmo
+</script>

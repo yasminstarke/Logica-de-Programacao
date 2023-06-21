@@ -11,5 +11,28 @@
 #           185720.0mm
 
 <script>
-    
+    algoritmo "08"
+var
+   medida, km, hm, dam, dm, cm, mm: Real
+inicio
+      Escreval("==========================================")
+      Escreval("           CONVERSOR DE MEDIDAS           ")
+      Escreval("==========================================")
+      Escreva("Digite uma distância em metros: ")
+      Leia(medida)
+      Escreval("A distância de ", medida, "m corresponde a: ")
+      km <- (medida * 0.001)
+      hm <- (medida * 0.01)
+      dam <- (medida * 0.1)
+      dm <- (medida * 10)
+      cm <- (medida * 100)
+      mm <- (medida * 1000)
+      Escreval(km, "km")
+      Escreval(hm, "hm")
+      Escreval(dam, "dam")
+      Escreval(dm, "dm")
+      Escreval(cm, "cm")
+      Escreval(mm, "mm")
+      Escreval("___________________________________________")
+fimalgoritmo    
 </script>
