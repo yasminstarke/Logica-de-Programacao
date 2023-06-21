@@ -3,5 +3,24 @@
 # por hora trabalhada.
 
 <script>
-    
+    algoritmo "015"
+var
+   dia: Inteiro
+   pgtodia, salario: Real
+inicio
+      Escreval("======================================================")
+      Escreval("               CONTROLE DE FUNCIONÁRIOS               ")
+      Escreval("======================================================")
+      Escreva("Digite quantos dias trabalhados: ")
+      Leia(dia)
+      pgtodia <- (8 * 25)
+      salario <- (dia * pgtodia)
+      Escreval("O salário desse funcionário será de R$", salario:4:2)
+      Se (dia < 26) entao
+         Escreval("*** FUNCIONÁRIO PREGUIÇOSO ***")
+      senao
+           Escreval("*** FUNCIONÁRIO DEDICADO ***")
+      FimSe
+      Escreval("______________________________________________________")
+fimalgoritmo
 </script>
