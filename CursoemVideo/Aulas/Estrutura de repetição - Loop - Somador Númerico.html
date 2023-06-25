@@ -1,0 +1,46 @@
+<script>
+    algoritmo "SomadorNumerico"
+var
+   cont, n, s: Inteiro
+inicio
+      cont <- 1
+      s <- 0
+      Enquanto (cont <= 5) faca
+               Escreva("Digite o ", cont, "o. valor: ")
+               Leia(n)
+               s <- s + n
+               cont <- cont + 1
+      FimEnquanto
+      Escreva("A soma de todos os valores é de", s)
+fimalgoritmo
+</script>
+
+#########################   Outro    ##################
+
+<script>
+algoritmo "ContadorNumerico"
+var
+   contador, n, nummaior, nummenor, s: Inteiro
+inicio
+   contador <- 0
+   Enquanto (contador < 4) faca
+      Escreva("Digite um número: ")
+      Leia(n)
+      Se (contador = 0) entao
+         nummenor <- n
+      Senao
+       Se (n < nummenor) entao
+            nummenor <- n
+       FimSe
+      FimSe
+      Se (n > nummaior) entao
+         nummaior <- n
+      FimSe
+      contador <- contador + 1
+      s <- s + n
+   FimEnquanto
+   Escreval("A soma de todos os valores é de ", s)
+   Escreval("O maior número digitado foi ", nummaior)
+   Escreval("O menor número digitado foi ", nummenor)
+fimalgoritmo
+</script>
