@@ -1,0 +1,38 @@
+<script>
+algoritmo "Escolhendo Pessoas"
+var
+   sexo, resposta: caractere
+   idade, cabelo, contadorfeminino, contadormasculino: Inteiro
+inicio
+   Repita
+      Escreval("=================================")
+      Escreval("       SELETOR DE PESSOAS        ")
+      Escreval("=================================")
+      Escreva("Qual o sexo? [M/F] ")
+      Leia(sexo)
+      Escreva("Qual a idade: ")
+      Leia(idade)
+      Escreval("Qual a cor do cabelo?")
+      Escreval("---------------------")
+      Escreval("[1] Preto")
+      Escreval("[2] Castanho")
+      Escreval("[3] Loiro")
+      Escreval("[4] Ruivo")
+      Leia(cabelo)
+      Se (sexo = "m") e (idade > 18) e (cabelo = 2)entao
+         contadormasculino <- contadormasculino + 1
+      FimSe
+      Se (sexo = "f") e ((idade >=25) e (idade <= 30)) e (cabelo = 3)entao
+         contadorfeminino <- contadorfeminino + 1
+      FimSe
+      Escreva("Quer continuar? [S/N] ")
+      Leia(resposta)
+   Ate (resposta = "n")
+   LimpaTela
+   Escreval("-----------------------------------")
+   Escreval("         RESULTADO FINAL           ")
+   Escreval("-----------------------------------")
+   Escreval("Total de homens com mais de 18 anos e cabelos castanhos ", contadormasculino)
+   Escreval("Total de mulheres entre 25 e 30 anos e cabelos loiros ", contadorfeminino)
+fimalgoritmo
+</script>

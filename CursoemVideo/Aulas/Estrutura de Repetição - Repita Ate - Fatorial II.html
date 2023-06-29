@@ -1,0 +1,23 @@
+<script>
+    algoritmo "Fatorialopçãousuario"
+var
+   contador, fatorial, numero: inteiro
+   resposta:Caractere
+inicio
+   Repita
+      Escreva("Digite um número: ")
+      Leia(numero)
+      contador <- numero
+      fatorial <- 1
+      Repita
+         Escreva(contador, " X ")
+         fatorial <- fatorial * contador
+         contador <- contador - 1
+      Ate (contador < 1)
+      Escreval("O valor do fatorial de ", numero, " é igual a ", fatorial)
+      Escreval("Quer continuar? [S/N]")
+      Leia(resposta)
+      LimpaTela
+      Ate (resposta = "n")
+fimalgoritmo
+</script>

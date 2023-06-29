@@ -1,0 +1,34 @@
+<script>
+    algoritmo "Super Contador"
+var
+   numero, contador: Inteiro
+inicio
+Repita
+   Escreval("Escolha uma opção: ")
+   Escreval("=================")
+   Escreval("|    M E N U    |")
+   Escreval("=================")
+   Escreval("| [1] De 1 a 10 |")
+   Escreval("| [2] De 10 a 1 |")
+   Escreval("| [3] Sair      |")
+   Escreval("=================")
+   Leia(numero)
+   Se (numero = 1)entao
+      contador <- 1
+      Enquanto (contador <= 10)faca
+         Escreval(contador)
+         contador <- contador + 1
+      FimEnquanto
+   Senao
+      se (numero = 2) entao
+         contador <- 10
+         Enquanto (contador >= 1)faca
+            Escreval(contador)
+            contador <- contador - 1
+         FimEnquanto
+                  FimSe
+      FimSe
+Ate (numero = 3)
+Escreval("S A I N D O ....")
+fimalgoritmo
+</script>

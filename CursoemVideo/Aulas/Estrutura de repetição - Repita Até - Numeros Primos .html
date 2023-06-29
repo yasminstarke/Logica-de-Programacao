@@ -1,0 +1,22 @@
+<script>
+algoritmo "Numeros Primos"
+var
+   contador, numero, contadordivisiveis: Inteiro
+
+inicio
+   contador <- 1
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Repita
+      Se (numero % contador = 0) entao
+         contadordivisiveis <- contadordivisiveis + 1
+      FimSe
+      contador <- contador + 1
+   Ate (contador > numero)
+   Se (contadordivisiveis > 2) entao
+      escreval("O valor ", numero, " não é primo")
+   Senao
+      Escreval("O valor ", numero, " é primo!")
+   FimSe
+fimalgoritmo
+</script>

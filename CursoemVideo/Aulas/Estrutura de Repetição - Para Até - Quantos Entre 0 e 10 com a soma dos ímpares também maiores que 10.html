@@ -1,0 +1,21 @@
+<script>
+    algoritmo "Quantos Entre 0 e 10 com a soma dos Impares > 10"
+var
+   contador, valor, total010, somaimpares: Inteiro
+inicio
+   total010 <- 0
+   somaimpares <- valor
+   Para contador <- 1 ate 6 faca
+      Escreva("Digite um valor: ")
+      Leia(valor)
+      Se (valor >= 0) e (valor <= 10) entao
+         total010 <- total010 + 1
+      FimSe
+      Se (valor % 2 = 1)entao
+         somaimpares <- somaimpares + valor
+      FimSe
+   FimPara
+   Escreval("Ao todo foram", total010, " valores entre 0 e 10.")
+   Escreval("Nesse intervalo, a soma dos números ímpares é de", somaimpares, ".")
+fimalgoritmo
+</script>
