@@ -1,0 +1,19 @@
+<script>
+    algoritmo "Tempo de Vida - Fumante"
+var
+   cigarro, anos, totaldecigarros, minutos, diastotal: Real
+inicio
+      Escreval("=====================================")
+      Escreval("|      TEMPO DE VIDA PERDIDO        |")
+      Escreval("=====================================")
+   Escreva("Quantos cigarros por dia você fuma? ")
+   Leia(cigarro)
+   Escreva("Quantos anos você fuma? ")
+   Leia(anos)
+   totaldecigarros <- cigarro * anos * 365
+   minutos <- totaldecigarros * 10
+   diastotal <- minutos / 1440         // Quantidade de minutos em um dia
+   Escreval("Você perdeu ", diastotal:2, " dias de vida.")
+   Escreva("******* PARE DE FUMAR *******")
+fimalgoritmo
+</script>
