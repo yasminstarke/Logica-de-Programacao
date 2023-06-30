@@ -6,5 +6,34 @@ que:
  - Mulheres ganham 13% de desconto
 
  <script>
-    
+    algoritmo "ex023"
+var
+   nome, sexo: Caractere
+   valor_compra, desconto: Real
+
+inicio
+   Escreval("========================================================")
+   Escreval("            ~~~~~~ DESCONTOS ESPECIAIS ~~~~~~           ")
+   Escreval("========================================================")
+   Escreva("Digite seu nome: ")
+   Leia(nome)
+   Escreva("Qual seu sexo? [M/F] ")
+   Leia(sexo)
+   Escreva("Digite o valor total da compra: R$ ")
+   Leia(valor_compra)
+   Escreval("========================================================")
+   Se (sexo = "f") então
+      desconto <- valor_compra * 13/100
+      desconto <- (valor_compra - desconto)
+      Escreval("Desconto Especial para você Mulher!")
+      Escreval(nome, " sua compra de R$", valor_compra, " com 13%off ficou em R$",desconto:5:3)
+   Senao
+        se (sexo = "m") entao
+         desconto <- valor_compra * 5/100
+         desconto <- (valor_compra - desconto)
+         Escreval("Desconto para você Homem!")
+         Escreval(nome, " sua compra de R$", valor_compra, " com 5%off ficou em R$",desconto:5:3)
+        FimSe
+   FimSe
+fimalgoritmo    
  </script>

@@ -5,5 +5,23 @@ de cada lado deve ser menor que a soma dos outros dois.
 
 
 <script>
-    
+    algoritmo "ex025"
+var
+   reta1, reta2, reta3: Real
+inicio
+      Escreval("=================================")
+      Escreval("    ANALISADOR DE TRIÂNGULOS     ")
+      Escreval("=================================")
+      Escreva(" Primeiro segmento: ")
+      Leia(reta1)
+      Escreva(" Segundo segmento: ")
+      Leia(reta2)
+      Escreva(" Terceiro segmento: ")
+      Leia(reta3)
+      Se (reta1 < reta2  + reta3) e (reta2 <  reta1 + reta3) e (reta3 < reta1 + reta2) entao
+         Escreval("Os segmentos acima PODEM FORMAR um triângulo!")
+         Senao
+           Escreval("Os segmentos acima NÃO PODEM FORMAR um triângulo!")
+      FimSe
+fimalgoritmo    
 </script>

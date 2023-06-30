@@ -4,5 +4,23 @@ viagens até 200Km e R$0.45 para viagens mais longas.
 
 
 <script>
-
+    algoritmo "ex024"
+var
+   distancia, passagem_curta, passagem_longa: Real
+inicio
+      Escreval("============================================")
+      Escreval("    STARKE - A SUA AGÊNCIA DE VIAGENS       ")
+      Escreval("============================================")
+      Escreva(" Qual a distância em KM do seu destino? ")
+      Leia(distancia)
+      Se (distancia <= 200) entao
+         passagem_curta <- distancia * 0.50
+         Escreval(" Sua passagem custará R$", passagem_curta)
+      Senao
+           Se (distancia > 200) entao
+              passagem_longa <- distancia * 0.45
+              Escreval(" Sua passagem custará R$", passagem_longa)
+           FimSe
+      FimSe
+fimalgoritmo
 </script>

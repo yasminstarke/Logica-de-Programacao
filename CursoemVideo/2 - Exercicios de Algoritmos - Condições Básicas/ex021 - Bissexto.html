@@ -2,5 +2,16 @@
 BISSEXTO.
 
 <script>
-    
+    algoritmo "ex021"
+var
+   ano: Inteiro
+inicio
+   Escreva("Qual ano deseja analisar? ")
+   Leia(ano)
+   Se (ano % 4 = 0) e (ano % 100 <> 0) ou (ano % 400 = 0) entao
+      Escreval("O ano de", ano, " é BISSEXTO.")
+   Senao
+      Escreval("O ano de", ano, " NÃO é BISSEXTO.")
+   FimSe
+fimalgoritmo    
 </script>

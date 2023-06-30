@@ -7,5 +7,24 @@ alistamento.
 
 
 <script>
-    
+    algoritmo "ex022"
+var
+   nascimento, ano_atual, idade: inteiro
+inicio
+      Escreval("--------------------------------------------------")
+      Escreval("                  ALISTAMENTO MILITAR             ")
+      Escreval("--------------------------------------------------")
+      Escreva("Digite sua data de nascimento: ")
+      Leia(nascimento)
+      Escreva("Digite o ano atual: ")
+      Leia(ano_atual)
+      idade <- (ano_atual - nascimento)
+      Se (idade < 18) entao
+         idade <- (18 - idade)
+               Escreval("Faltam", idade, " anos para o Alistamento Militar.")
+         Senao
+           idade <- (idade - 18)
+           Escreval("Passaram-se", idade, " anos do seu Alistamento Militar.")
+      FimSe
+fimalgoritmo    
 </script>

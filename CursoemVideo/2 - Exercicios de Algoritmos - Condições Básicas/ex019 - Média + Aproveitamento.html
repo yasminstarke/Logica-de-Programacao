@@ -3,5 +3,22 @@ média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
 não um bom aproveitamento (se ficou acima da média 7.0).
 
 <script>
-    
+    algoritmo "ex019"
+var
+   nota1, nota2, media: Real
+inicio
+   EscrevaL("=========================================")
+   Escreval("           ANÁLISE DE MÉDIAS             ")
+   Escreval("=========================================")
+   Escreva("Digite 1º nota: ")
+   Leia(nota1)
+   Escreva("Digite 2º nota: ")
+   Leia(nota2)
+   media <- (nota1 + nota2) / 2
+   Se (media >= 7.0) então
+      EscrevaL("Sua média foi", media, ". Você teve um BOM APROVEITAMENTO!")
+   Senão
+      Escreval("Sua média foi", media, ". Você NÃO teve um bom aproveitamento.")
+   FimSe
+fimalgoritmo    
 </script>
