@@ -2,5 +2,21 @@
 dela e depois mostre se ela pode ou não votar.
 
 <script>
-    
+    algoritmo "ex018"
+var
+   nascimento, ano_atual, idade: Inteiro
+inicio
+      Escreval("==========================================")
+   Escreva("Digite sua data de nascimento: ")
+   Leia(nascimento)
+   Escreva("Digite o ano atual: ")
+   Leia(ano_atual)
+   Escreval("==========================================")
+   idade <- (ano_atual - nascimento)
+   Se (idade >= 16 ) entao
+      Escreval("Você tem", idade, " anos e está APTO à votar.")
+   Senao
+      Escreval("Você tem", idade, " anos e NÃO ESTÁ APTO à votar.")
+   FimSe
+fimalgoritmo
 </script>

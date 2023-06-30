@@ -3,5 +3,18 @@
 o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 
 <script>
-    
+    algoritmo "ex017"
+var
+   velocidade, multa: Real
+inicio
+      Escreva("Digite a velocidade do veículo: ")
+      Leia(velocidade)
+      Se (velocidade > 80) entao
+         multa <- (velocidade - 80) * 5
+         Escreval("Você ultrapassou o limite de velocidade.")
+         Escreval("O valor da sua multa será de R$ ", multa)
+      senão
+           Escreval("Velocidade dentro do permitido. Boa viagem!")
+      FimSe
+fimalgoritmo    
 </script>
