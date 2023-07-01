@@ -1,0 +1,36 @@
+27) Crie um programa que leia duas notas de um aluno e calcule a sua média, 
+mostrando uma mensagem no final, de acordo com a média atingida:
+ - Média até 4.9: REPROVADO
+ - Média entre 5.0 e 6.9: RECUPERAÇÃO
+ - Média 7.0 ou superior: APROVADO
+
+ <script>
+    algoritmo "ex027"
+var
+   n1, n2, media: Real
+inicio
+   Escreval("=============================")
+   Escreval("       RESULTADO FINAL       ")
+   Escreval("=============================")
+   Escreva("Digite a 1ª Nota: ")
+   Leia(n1)
+   Escreva("Digite a 2ª Nota: ")
+   Leia(n2)
+   Escreval("=============================")
+   media <- (n1 + n2) / 2
+   Se (media <= 4.9) entao
+      Escreval("Sua média foi ", media)
+      Escreval("Resultado Final: REPROVADO")
+   Senao
+      Se (media >= 5.0) e (media <= 6.9) entao
+         Escreval("Sua média foi ", media)
+         Escreval("Resultado Final: RECUPERAÇÃO")
+      Senao
+         Se (media >= 7.0) entao
+            Escreval("Sua média foi ", media)
+            Escreval("Resultado Final: APROVADO")
+         FimSe
+      FimSe
+   FimSe
+fimalgoritmo
+ </script>
