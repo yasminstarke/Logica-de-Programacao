@@ -6,5 +6,37 @@ de triângulo será formado:
 
 
  <script>
-    
+    algoritmo "ex030"
+var
+   reta1, reta2, reta3: Real
+inicio
+   Escreval("=================================")
+   Escreval("    ANALISADOR DE TRIÂNGULOS     ")
+   Escreval("=================================")
+   Escreva(" Primeiro segmento: ")
+   Leia(reta1)
+   Escreva(" Segundo segmento: ")
+   Leia(reta2)
+   Escreva(" Terceiro segmento: ")
+   Leia(reta3)
+   Escreval("=================================")
+   Escreval("  ")
+   Se (reta1 = reta2) e (reta2 = reta3) entao
+      Escreval(" Esse é um triângulo EQUILÁTERO.")
+   Senao
+      Se (reta1 <> reta2) e (reta2 <> reta3) e (reta1 <> reta3) entao
+         Escreval(" Esse é um triângulo ESCALENO.")
+      Senao
+         Se (reta1 = reta2) e (reta2 <> reta3) e (reta1 = reta2) ou (reta1 = reta3) ou (reta2 = reta3) entao
+            Escreval(" Esse é um triângulo ISÓSCELES.")
+         FimSe
+      FimSe
+   FimSe
+   Escreval("  ")
+   Se (reta1 < reta2  + reta3) e (reta2 <  reta1 + reta3) e (reta3 < reta1 + reta2) entao
+      Escreval(" Os segmentos acima PODEM FORMAR um triângulo!")
+      Senao
+           Escreval(" Os segmentos acima NÃO PODEM FORMAR um triângulo!")
+   FimSe
+fimalgoritmo
  </script>

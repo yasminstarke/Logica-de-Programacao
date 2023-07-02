@@ -1,11 +1,37 @@
 28) Faça um programa que leia a largura e o comprimento de um terreno 
 retangular, calculando e mostrando a sua área em m². O programa também 
-devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+deve mostrar a classificação desse terreno, de acordo com a lista abaixo:
  - Abaixo de 100m² = TERRENO POPULAR
  - Entre 100m² e 500m² = TERRENO MASTER
  - Acima de 500m² = TERRENO VIP
 
 
  <script>
-    
+    algoritmo "ex028"
+var
+   largura, comprimento, area: Real
+inicio
+   Escreval("=============================================")
+   Escreval("              IMOBILIÁRIA STARKE             ")
+   Escreval("=============================================")
+   Escreval("  ")
+   Escreva("Informe a largura do terreno: ")
+   Leia(largura)
+   Escreva("Informe o comprimento do terreno: ")
+   Leia(comprimento)
+   area <- (largura * comprimento)
+   Escreval("")
+   Escreval("A área total do terreno é de", area, "m²")
+   Se (area < 100) entao
+      Escreval(" TERRENO POPULAR ")
+   Senao
+      Se (area >= 100) e (area <= 500) entao
+         Escreval(" TERRENO MASTER ")
+      Senao
+         Se (area > 500) entao
+            Escreval(" TERRENO VIP ")
+         FimSe
+      FimSe
+   FimSe
+fimalgoritmo
  </script>

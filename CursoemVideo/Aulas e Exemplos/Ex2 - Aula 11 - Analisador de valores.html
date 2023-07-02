@@ -1,0 +1,36 @@
+<script>
+    algoritmo "Analisador de Valores"
+var
+   soma, divisivel5, nulo, soma_par, contador, valor: Inteiro
+   media: Real
+inicio
+      Escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+      Escreval("         ANALISADOR DE VALORES         ")
+      Escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+      soma <- 0
+      divisivel5 <- 0
+      nulo <- 0
+      soma_par <- 0
+      Para contador <- 1 ate 5 faca
+           Escreva("Digite o ",contador, "o. valor: ")
+           Leia(valor)
+           Soma <- soma + valor
+           Se (valor % 5 = 0) entao
+              divisivel5 <- divisivel5 + 1
+           FimSe
+           Se (valor = 0) entao
+              nulo <- nulo + 1
+           FimSe
+           Se (valor % 2 = 0) entao
+              soma_par <- soma_par + valor
+           FimSe
+      FimPara
+      media <- soma / (contador - 1)
+      Escreval("  ")
+      Escreval("A soma entre os valores é ", soma)
+      Escreval("A média entre os valores é ", media)
+      Escreval("Valores divisiveis por cinco: ", divisivel5)
+      Escreval("Valores nulos: ", nulo)
+      Escreval("A soma dos valores pares é ", soma_par)
+fimalgoritmo    
+</script>

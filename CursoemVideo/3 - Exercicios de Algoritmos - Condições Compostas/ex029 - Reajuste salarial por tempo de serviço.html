@@ -7,5 +7,39 @@ acordo com a tabela a seguir:
 
 
  <script>
-    
+    algoritmo "ex29"
+var
+   nome: Caractere
+   salario, tempo_servico, reajuste: Real
+inicio
+      Escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+      Escreval("             REAJUSTE SALARIAL          ")
+      Escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+      Escreval("  ")
+      Escreva("Digite o nome do funcionário(a): ")
+      Leia(nome)
+      Escreva("Digite o salário atual: R$ ")
+      Leia(salario)
+      Escreva("Quantos anos de serviço na empresa: ")
+      Leia(tempo_servico)
+      Escreval("  ")
+      Se (tempo_servico < 3) entao
+         reajuste <- salario * (3 / 100)
+         reajuste <- salario + reajuste
+         Escreval("O novo salário de ", nome, " é de R$", reajuste)
+      Senao
+           Se (tempo_servico >= 3) e (tempo_servico < 10) entao
+              reajuste <- salario * (12.5 / 100)
+              reajuste <- salario + reajuste
+              Escreval("O novo salário de ", nome, " é de R$", reajuste)
+           Senao
+                Se (tempo_servico >= 10) entao
+                   reajuste <- salario * (20 / 100)
+                   reajuste <- salario + reajuste
+                   Escreval("O novo salário de ", nome, " é de R$", reajuste)
+                FimSe
+           FimSe
+      FimSe
+      
+fimalgoritmo
  </script>
