@@ -1,0 +1,45 @@
+<script>
+    algoritmo "ParOuImparFuncao"
+var
+   numero, resultado: inteiro
+Funcao ParOuImpar(X: Inteiro): Inteiro
+inicio
+      Retorne X % 2
+FimFuncao
+inicio
+      Escreva("Digite um número: ")
+      Leia(numero)
+      resultado <- par(numero)
+      Se ParOuImpar(numero) = 0 entao
+         Escreval("O número ", numero, " é PAR.")
+      Senao
+         Escreval("O número ", numero, " é ÍMPAR.")
+      FimSe
+      
+fimalgoritmo
+</script>
+
+###    OUTRO MODO ESSE É O MAIS CERTO      #####
+
+<SCript>
+    algoritmo "Analisador de Par ou Impar"
+var
+   N: Inteiro
+   R: Caractere
+   
+Funcao ParOuImpar(V: Inteiro): Caractere
+inicio
+      Se (V%2 = 0) entao
+         Retorne "PAR"
+      Senao
+         Retorne "IMPAR"
+      FimSe
+FimFuncao
+
+inicio
+      Escreva("Digite um número: ")
+      Leia(N)
+      R <- ParOuImpar(N)
+      Escreva("O número ", N, " é um valor ", R)
+fimalgoritmo
+</SCript>
