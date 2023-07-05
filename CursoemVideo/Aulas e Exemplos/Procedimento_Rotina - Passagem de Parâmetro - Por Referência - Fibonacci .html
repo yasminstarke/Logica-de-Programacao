@@ -1,0 +1,22 @@
+<script>
+    algoritmo "Fibonacci"
+var
+  Contador, Termo1, Termo2, Termo3 : Inteiro
+Procedimento ProximoFibonacci(var A, B: inteiro)
+var Contador: inteiro
+inicio
+      Contador <- A + B
+      Escreva(Contador)
+      A <- B
+      B <- Contador
+FimProcedimento
+inicio
+   Termo1 <- 0
+   Escreva (Termo1)
+   Termo2 <- 1
+   Escreva (Termo2)
+   Para Contador := 3 ate 15 faca
+       ProximoFibonacci(Termo1, Termo2)
+   FimPara
+fimalgoritmo
+</script>
