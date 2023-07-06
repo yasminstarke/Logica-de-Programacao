@@ -1,0 +1,42 @@
+<script>
+    algoritmo "Valores Pares"
+var
+   valores: vetor[1..7] de inteiro
+   contador, totalpares: Inteiro
+inicio
+      totalpares <- 0
+      Para contador <- 1 ate 7 faca
+           Escreva("Digite o ", contador, "o. valor: ")
+           Leia(valores[contador])
+           Se (valores[contador] % 2 = 0) entao
+           totalpares <- totalpares + 1
+           FimSe
+      FimPara
+      Escreval("O total de pares foi ", totalpares)
+fimalgoritmo   
+</script>
+
+
+####   MOSTRAR AS POSIÇÕES DESSES VALORES #####
+
+<script>
+    algoritmo "Valores Pares"
+var
+   valores: vetor[1..7] de inteiro
+   contador, totalpares: Inteiro
+inicio
+      totalpares <- 0
+      Para contador <- 1 ate 7 faca
+           Escreva("Digite o ", contador, "o. valor: ")
+           Leia(valores[contador])
+      FimPara
+
+      Para contador <- 1 ate 7 faca
+           Se (valores[contador] % 2 = 0) entao
+              totalpares <- totalpares + 1
+              Escreval("Valor PAR na Posição ", contador)
+           FimSe
+      FimPara
+      Escreval("O total de pares foi ", totalpares)
+fimalgoritmo
+</script>

@@ -1,0 +1,34 @@
+<script>
+    algoritmo "Listagem da Turma"
+var
+   nome: vetor[1..4] de caractere
+   nota1: vetor[1..4] de Real
+   nota2: vetor[1..4] de Real
+   media: vetor[1..4] de Real
+   contador, totalacimamedia: inteiro
+   somamedias, mediaturma: Real
+inicio
+      Para contador <- 1 ate 4 faca
+           Escreval("ALUNO: ", contador)
+           Escreva("Nome: ")
+           Leia(nome[contador])
+           Escreva("Primeira Nota: ")
+           Leia(nota1[contador])
+           Escreva("Segunda Nota: ")
+           Leia(nota2[contador])
+           media[contador] <- (nota1[contador] + nota2[contador]) / 2
+           somamedias <- somamedias + media[contador]
+      FimPara
+      mediaturma <- somamedias / 4
+      LimpaTela
+      Escreval("LISTAGEM DE ALUNOS")
+      Escreval("-----------------------")
+      Para contador <- 1 ate 4 faca
+           Escreval(nome[contador]:15, media[contador]:4:1)
+           Se (media[contador] > mediaturma) entao
+              totalacimamedia <- totalacimamedia + 1
+           FimSe
+      FimPara
+      Escreval("Ao todo temos ", totalacimamedia, " alunos acima da media da turma que é ", mediaturma:4:1)
+fimalgoritmo
+</script>

@@ -1,0 +1,22 @@
+<script>
+    algoritmo "AnalisadorStrings"
+var
+   nome: caractere
+   contador: inteiro
+inicio
+      Escreva("Digite seu nome: ")
+      Leia(nome)
+      Escreval("Total de letras do seu nome: ", Compr(nome))
+      Escreval("Seu nome em maiusculas é: ", Maiusc(nome))
+      Escreval("Seu nome em minusculas é: ", Minusc(nome))
+      Escreval("A primeira letra do seu nome é: ", Copia(nome, 1,1))
+      Escreval("A ultima letra do seu nome é: ", Copia(nome, Compr(nome),1))
+      Escreval("Seu nome tem a letra A na posição: ", Pos("A", Maiusc(nome)))
+      Escreval("O código da letra A é: ", Asc("A"))
+      Escreval("A letra do código 65 é: ", Carac(65))
+
+      Para contador <- Compr(nome) ate 1 passo -1 faca
+           Escreva(Copia(Maiusc(nome), contador, 1))
+      FimPara
+fimalgoritmo
+</script>
